@@ -1,0 +1,791 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/style.css" >
+    <link rel="stylesheet" type="text/css" href="css/slick.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/slick.js"></script>
+
+    
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="main-wrapper">
+        <!-- Header HTML -->
+        <header>
+            <div class="header-left">
+                <div class="logo-text">
+                    <img alt="" src="./assets/images/fleet-icon.svg" width="36" height="36">
+                    <h1>fleet</h1>
+                </div>
+                <div class="logo-text-separator"></div>
+
+                <div class="travels-dropdown">
+                    <h4>Travelers</h4>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 9.79289C15.8166 9.40237 15.1834 9.40237 14.7929 9.79289L12 12.5858L9.20711 9.79289C8.81658 9.40237 8.18342 9.40237 7.79289 9.79289C7.40237 10.1834 7.40237 10.8166 7.79289 11.2071L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L16.2071 11.2071C16.5976 10.8166 16.5976 10.1834 16.2071 9.79289Z" fill="#777E91"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li>
+                        <a href="#">Support</a>
+                    </li>
+                    <li>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 13.3335C10.9454 13.3335 13.3333 10.9457 13.3333 8.00016C13.3333 5.05464 10.9454 2.66683 7.99992 2.66683C5.0544 2.66683 2.66659 5.05464 2.66659 8.00016C2.66659 10.9457 5.0544 13.3335 7.99992 13.3335ZM7.99992 14.6668C11.6818 14.6668 14.6666 11.6821 14.6666 8.00016C14.6666 4.31826 11.6818 1.3335 7.99992 1.3335C4.31802 1.3335 1.33325 4.31826 1.33325 8.00016C1.33325 11.6821 4.31802 14.6668 7.99992 14.6668Z" fill="#777E91"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.16453 12.1179C9.657 11.133 10.0001 9.679 10.0001 8.00016C10.0001 6.32132 9.657 4.86734 9.16453 3.8824C8.63219 2.81771 8.14345 2.66683 8.00008 2.66683C7.85671 2.66683 7.36797 2.81771 6.83563 3.8824C6.34316 4.86734 6.00008 6.32132 6.00008 8.00016C6.00008 9.679 6.34316 11.133 6.83563 12.1179C7.36797 13.1826 7.85671 13.3335 8.00008 13.3335C8.14345 13.3335 8.63219 13.1826 9.16453 12.1179ZM8.00008 14.6668C9.84103 14.6668 11.3334 11.6821 11.3334 8.00016C11.3334 4.31826 9.84103 1.3335 8.00008 1.3335C6.15913 1.3335 4.66675 4.31826 4.66675 8.00016C4.66675 11.6821 6.15913 14.6668 8.00008 14.6668Z" fill="#777E91"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M14.6337 8.66683C14.6554 8.44756 14.6666 8.22516 14.6666 8.00016C14.6666 7.77516 14.6554 7.55277 14.6337 7.3335H1.36617C1.3444 7.55277 1.33325 7.77516 1.33325 8.00016C1.33325 8.22516 1.3444 8.44756 1.36617 8.66683H14.6337Z" fill="#777E91"/>
+                          </svg>
+                        <a href="#">Language</a>
+                    </li>
+                    <li>
+                        <a class="list-property-btn" href="#">List your property</a>
+                    </li>
+                </ul>
+                <div class="notify-bell">
+                    <img alt="" src="./assets/images/notification-bell.svg" width="24" height="24">
+                    <div class="bell-dot"></div>
+                </div>
+                <div class="profile-img">
+                    <img alt="" src="./assets/images/avatar.png" width="40" height="40">
+                </div>
+                <div class="mobile-nav">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path d="M6.66683 10.6665C5.93045 10.6665 5.3335 11.2635 5.3335 11.9998C5.3335 12.7362 5.93045 13.3332 6.66683 13.3332H25.3335C26.0699 13.3332 26.6668 12.7362 26.6668 11.9998C26.6668 11.2635 26.0699 10.6665 25.3335 10.6665H6.66683Z" fill="#777E91"/>
+                        <path d="M6.66683 18.6665C5.93045 18.6665 5.3335 19.2635 5.3335 19.9998C5.3335 20.7362 5.93045 21.3332 6.66683 21.3332H25.3335C26.0699 21.3332 26.6668 20.7362 26.6668 19.9998C26.6668 19.2635 26.0699 18.6665 25.3335 18.6665H6.66683Z" fill="#777E91"/>
+                    </svg>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <!-- Banner HTML -->
+    <div class="main-banner-wrapper">
+        <div class="banner-img">
+            <picture>
+                <source media="(max-width:767px)" srcset="./assets/images/mobile-banner-img.png" width="343" height="812">
+                <source media="(min-width:768px)" srcset="./assets/images/banner-img.png" width="1280" height="776">
+                <img alt="" src="./assets/images/banner-img.png" >
+            </picture>
+            <div class="banner-text-wrapper">
+                <div class="banner-text-inner">
+                    <h3>Air, sleep, dream</h3>
+                    <span>Find and book a great experience.</span>
+                    <div class="start-search-btn">
+                        <button type="button">Start your search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-banner-tabs">
+            <div class="tab-container">
+                <div class="tabs">
+                    <button class="tab-button active" onclick="openTab(event, 'tab1')">Stays</button>
+                    <button class="tab-button" onclick="openTab(event, 'tab2')">Flights</button>
+                    <button class="tab-button" onclick="openTab(event, 'tab3')">Cars</button>
+                    <button class="tab-button" onclick="openTab(event, 'tab4')">Things to do</button>
+                </div>
+                <div id="tab1" class="tab-content" style="display: flex;">
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="icons/Location Arrow/Line">
+                                    <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M18.2528 2.47824C20.3134 1.61966 22.3806 3.68688 21.522 5.74747L15.5985 19.9639C14.4401 22.7442 10.3653 22.2743 9.8701 19.3033L9.13109 14.8692L4.69701 14.1302C1.72602 13.635 1.25608 9.56021 4.03636 8.40176L18.2528 2.47824ZM19.6759 4.97824C19.8476 4.56612 19.4341 4.15268 19.022 4.32439L4.80559 10.2479C3.87883 10.6341 4.03548 11.9923 5.0258 12.1574L9.45989 12.8964C10.3028 13.0369 10.9634 13.6974 11.1039 14.5404L11.8429 18.9745C12.0079 19.9648 13.3662 20.1214 13.7524 19.1947L19.6759 4.97824Z" fill="#B1B5C4"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Location</h5>
+                            <p>Where are you going?</p>
+                        </div>
+                    </div>
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">                          
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 10H9C8.44772 10 8 10.4477 8 11V23C8 23.5523 8.44772 24 9 24H23C23.5523 24 24 23.5523 24 23V11C24 10.4477 23.5523 10 23 10ZM9 8C7.34315 8 6 9.34315 6 11V23C6 24.6569 7.34315 26 9 26H23C24.6569 26 26 24.6569 26 23V11C26 9.34315 24.6569 8 23 8H9Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 16C13.4477 16 13 16.4477 13 17C13 17.5523 13.4477 18 14 18H21C21.5523 18 22 17.5523 22 17C22 16.4477 21.5523 16 21 16H14ZM11 20C10.4477 20 10 20.4477 10 21C10 21.5523 10.4477 22 11 22H17C17.5523 22 18 21.5523 18 21C18 20.4477 17.5523 20 17 20H11Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6C10.4477 6 10 6.44772 10 7V11C10 11.5523 10.4477 12 11 12C11.5523 12 12 11.5523 12 11V7C12 6.44772 11.5523 6 11 6ZM21 6C20.4477 6 20 6.44772 20 7V11C20 11.5523 20.4477 12 21 12C21.5523 12 22 11.5523 22 11V7C22 6.44772 21.5523 6 21 6Z" fill="#B1B5C4"/>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Check in</h5>
+                            <p>Add date</p>
+                        </div>
+                    </div>
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 10H9C8.44772 10 8 10.4477 8 11V23C8 23.5523 8.44772 24 9 24H23C23.5523 24 24 23.5523 24 23V11C24 10.4477 23.5523 10 23 10ZM9 8C7.34315 8 6 9.34315 6 11V23C6 24.6569 7.34315 26 9 26H23C24.6569 26 26 24.6569 26 23V11C26 9.34315 24.6569 8 23 8H9Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 16C13.4477 16 13 16.4477 13 17C13 17.5523 13.4477 18 14 18H21C21.5523 18 22 17.5523 22 17C22 16.4477 21.5523 16 21 16H14ZM11 20C10.4477 20 10 20.4477 10 21C10 21.5523 10.4477 22 11 22H17C17.5523 22 18 21.5523 18 21C18 20.4477 17.5523 20 17 20H11Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6C10.4477 6 10 6.44772 10 7V11C10 11.5523 10.4477 12 11 12C11.5523 12 12 11.5523 12 11V7C12 6.44772 11.5523 6 11 6ZM21 6C20.4477 6 20 6.44772 20 7V11C20 11.5523 20.4477 12 21 12C21.5523 12 22 11.5523 22 11V7C22 6.44772 21.5523 6 21 6Z" fill="#B1B5C4"/>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Check out</h5>
+                            <p>Add date</p>
+                        </div>
+                    </div>
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 17C12.134 17 9 20.134 9 24V26C9 26.5523 8.55228 27 8 27C7.44772 27 7 26.5523 7 26V24C7 19.0294 11.0294 15 16 15C20.9706 15 25 19.0294 25 24V26C25 26.5523 24.5523 27 24 27C23.4477 27 23 26.5523 23 26V24C23 20.134 19.866 17 16 17Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 15C18.2091 15 20 13.2091 20 11C20 8.79086 18.2091 7 16 7C13.7909 7 12 8.79086 12 11C12 13.2091 13.7909 15 16 15ZM16 17C19.3137 17 22 14.3137 22 11C22 7.68629 19.3137 5 16 5C12.6863 5 10 7.68629 10 11C10 14.3137 12.6863 17 16 17Z" fill="#B1B5C4"/>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Travelers</h5>
+                            <p>Add guests</p>
+                        </div>
+                        <div class="travel-search-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14.9056 16.3199C13.551 17.3729 11.8487 18 10 18C5.58172 18 2 14.4183 2 10C2 5.58172 5.58172 2 10 2C14.4183 2 18 5.58172 18 10C18 11.8487 17.3729 13.551 16.3199 14.9056L21.7071 20.2929C22.0976 20.6834 22.0976 21.3166 21.7071 21.7071C21.3166 22.0976 20.6834 22.0976 20.2929 21.7071L14.9056 16.3199ZM16 10C16 13.3137 13.3137 16 10 16C6.68629 16 4 13.3137 4 10C4 6.68629 6.68629 4 10 4C13.3137 4 16 6.68629 16 10Z" fill="#FCFCFD"/>
+                            </svg>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div id="tab2" class="tab-content">
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 17C12.134 17 9 20.134 9 24V26C9 26.5523 8.55228 27 8 27C7.44772 27 7 26.5523 7 26V24C7 19.0294 11.0294 15 16 15C20.9706 15 25 19.0294 25 24V26C25 26.5523 24.5523 27 24 27C23.4477 27 23 26.5523 23 26V24C23 20.134 19.866 17 16 17Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 15C18.2091 15 20 13.2091 20 11C20 8.79086 18.2091 7 16 7C13.7909 7 12 8.79086 12 11C12 13.2091 13.7909 15 16 15ZM16 17C19.3137 17 22 14.3137 22 11C22 7.68629 19.3137 5 16 5C12.6863 5 10 7.68629 10 11C10 14.3137 12.6863 17 16 17Z" fill="#B1B5C4"/>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Travelers</h5>
+                            <p>Add guests</p>
+                        </div>
+                    </div>
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 10H9C8.44772 10 8 10.4477 8 11V23C8 23.5523 8.44772 24 9 24H23C23.5523 24 24 23.5523 24 23V11C24 10.4477 23.5523 10 23 10ZM9 8C7.34315 8 6 9.34315 6 11V23C6 24.6569 7.34315 26 9 26H23C24.6569 26 26 24.6569 26 23V11C26 9.34315 24.6569 8 23 8H9Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 16C13.4477 16 13 16.4477 13 17C13 17.5523 13.4477 18 14 18H21C21.5523 18 22 17.5523 22 17C22 16.4477 21.5523 16 21 16H14ZM11 20C10.4477 20 10 20.4477 10 21C10 21.5523 10.4477 22 11 22H17C17.5523 22 18 21.5523 18 21C18 20.4477 17.5523 20 17 20H11Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6C10.4477 6 10 6.44772 10 7V11C10 11.5523 10.4477 12 11 12C11.5523 12 12 11.5523 12 11V7C12 6.44772 11.5523 6 11 6ZM21 6C20.4477 6 20 6.44772 20 7V11C20 11.5523 20.4477 12 21 12C21.5523 12 22 11.5523 22 11V7C22 6.44772 21.5523 6 21 6Z" fill="#B1B5C4"/>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Check out</h5>
+                            <p>Add date</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab3" class="tab-content">
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g id="icons/Location Arrow/Line">
+                                    <path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M18.2528 2.47824C20.3134 1.61966 22.3806 3.68688 21.522 5.74747L15.5985 19.9639C14.4401 22.7442 10.3653 22.2743 9.8701 19.3033L9.13109 14.8692L4.69701 14.1302C1.72602 13.635 1.25608 9.56021 4.03636 8.40176L18.2528 2.47824ZM19.6759 4.97824C19.8476 4.56612 19.4341 4.15268 19.022 4.32439L4.80559 10.2479C3.87883 10.6341 4.03548 11.9923 5.0258 12.1574L9.45989 12.8964C10.3028 13.0369 10.9634 13.6974 11.1039 14.5404L11.8429 18.9745C12.0079 19.9648 13.3662 20.1214 13.7524 19.1947L19.6759 4.97824Z" fill="#B1B5C4"/>
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Location</h5>
+                            <p>Where are you going?</p>
+                        </div>
+                    </div>
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 10H9C8.44772 10 8 10.4477 8 11V23C8 23.5523 8.44772 24 9 24H23C23.5523 24 24 23.5523 24 23V11C24 10.4477 23.5523 10 23 10ZM9 8C7.34315 8 6 9.34315 6 11V23C6 24.6569 7.34315 26 9 26H23C24.6569 26 26 24.6569 26 23V11C26 9.34315 24.6569 8 23 8H9Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 16C13.4477 16 13 16.4477 13 17C13 17.5523 13.4477 18 14 18H21C21.5523 18 22 17.5523 22 17C22 16.4477 21.5523 16 21 16H14ZM11 20C10.4477 20 10 20.4477 10 21C10 21.5523 10.4477 22 11 22H17C17.5523 22 18 21.5523 18 21C18 20.4477 17.5523 20 17 20H11Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6C10.4477 6 10 6.44772 10 7V11C10 11.5523 10.4477 12 11 12C11.5523 12 12 11.5523 12 11V7C12 6.44772 11.5523 6 11 6ZM21 6C20.4477 6 20 6.44772 20 7V11C20 11.5523 20.4477 12 21 12C21.5523 12 22 11.5523 22 11V7C22 6.44772 21.5523 6 21 6Z" fill="#B1B5C4"/>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Check out</h5>
+                            <p>Add date</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="tab4" class="tab-content">
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 17C12.134 17 9 20.134 9 24V26C9 26.5523 8.55228 27 8 27C7.44772 27 7 26.5523 7 26V24C7 19.0294 11.0294 15 16 15C20.9706 15 25 19.0294 25 24V26C25 26.5523 24.5523 27 24 27C23.4477 27 23 26.5523 23 26V24C23 20.134 19.866 17 16 17Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 15C18.2091 15 20 13.2091 20 11C20 8.79086 18.2091 7 16 7C13.7909 7 12 8.79086 12 11C12 13.2091 13.7909 15 16 15ZM16 17C19.3137 17 22 14.3137 22 11C22 7.68629 19.3137 5 16 5C12.6863 5 10 7.68629 10 11C10 14.3137 12.6863 17 16 17Z" fill="#B1B5C4"/>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Travelers</h5>
+                            <p>Add guests</p>
+                        </div>
+                    </div>
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 17C12.134 17 9 20.134 9 24V26C9 26.5523 8.55228 27 8 27C7.44772 27 7 26.5523 7 26V24C7 19.0294 11.0294 15 16 15C20.9706 15 25 19.0294 25 24V26C25 26.5523 24.5523 27 24 27C23.4477 27 23 26.5523 23 26V24C23 20.134 19.866 17 16 17Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16 15C18.2091 15 20 13.2091 20 11C20 8.79086 18.2091 7 16 7C13.7909 7 12 8.79086 12 11C12 13.2091 13.7909 15 16 15ZM16 17C19.3137 17 22 14.3137 22 11C22 7.68629 19.3137 5 16 5C12.6863 5 10 7.68629 10 11C10 14.3137 12.6863 17 16 17Z" fill="#B1B5C4"/>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Check in</h5>
+                            <p>Add guests</p>
+                        </div>
+                    </div>
+                    <div class="tab-wrapper">
+                        <div class="tab-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M23 10H9C8.44772 10 8 10.4477 8 11V23C8 23.5523 8.44772 24 9 24H23C23.5523 24 24 23.5523 24 23V11C24 10.4477 23.5523 10 23 10ZM9 8C7.34315 8 6 9.34315 6 11V23C6 24.6569 7.34315 26 9 26H23C24.6569 26 26 24.6569 26 23V11C26 9.34315 24.6569 8 23 8H9Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M14 16C13.4477 16 13 16.4477 13 17C13 17.5523 13.4477 18 14 18H21C21.5523 18 22 17.5523 22 17C22 16.4477 21.5523 16 21 16H14ZM11 20C10.4477 20 10 20.4477 10 21C10 21.5523 10.4477 22 11 22H17C17.5523 22 18 21.5523 18 21C18 20.4477 17.5523 20 17 20H11Z" fill="#B1B5C4"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M11 6C10.4477 6 10 6.44772 10 7V11C10 11.5523 10.4477 12 11 12C11.5523 12 12 11.5523 12 11V7C12 6.44772 11.5523 6 11 6ZM21 6C20.4477 6 20 6.44772 20 7V11C20 11.5523 20.4477 12 21 12C21.5523 12 22 11.5523 22 11V7C22 6.44772 21.5523 6 21 6Z" fill="#B1B5C4"/>
+                            </svg>
+                        </div>
+                        <div class="tab-detail">
+                            <h5>Check out</h5>
+                            <p>Add date</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Go Some Where HTML -->
+    <div class="go-somewhere-wrapper">
+        <div class="go-somewhere-inner">
+            <div class="somewhere-inner-title">
+                <h2>Go somewhere</h2>
+                <span>Let’s go on an adventure</span>
+            </div>
+            <div class="featured-tabs">
+                <div class="featured-tab-container">
+                    <div class="featured-tab-wrapper">
+                        <div class="tabs">
+                            <button class="tab-button active" onclick="openTab(event, 'tab5')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 13.3335C10.9457 13.3335 13.3335 10.9457 13.3335 8.00016C13.3335 5.05464 10.9457 2.66683 8.00016 2.66683C5.05464 2.66683 2.66683 5.05464 2.66683 8.00016C2.66683 10.9457 5.05464 13.3335 8.00016 13.3335ZM8.00016 14.6668C11.6821 14.6668 14.6668 11.6821 14.6668 8.00016C14.6668 4.31826 11.6821 1.3335 8.00016 1.3335C4.31826 1.3335 1.3335 4.31826 1.3335 8.00016C1.3335 11.6821 4.31826 14.6668 8.00016 14.6668Z" fill="#FCFCFD"/>
+                                    <path d="M7.3335 4.66667C7.3335 4.29848 7.63197 4 8.00016 4C8.36835 4 8.66683 4.29848 8.66683 4.66667C9.7714 4.66667 10.6668 5.5621 10.6668 6.66667C10.6668 7.03486 10.3684 7.33333 10.0002 7.33333C9.63197 7.33333 9.3335 7.03486 9.3335 6.66667C9.3335 6.29848 9.03502 6 8.66683 6H7.16244C6.88872 6 6.66683 6.22189 6.66683 6.49561C6.66683 6.70894 6.80334 6.89833 7.00571 6.96579L9.41625 7.7693C10.1631 8.01825 10.6668 8.71716 10.6668 9.50439C10.6668 10.5145 9.84798 11.3333 8.83788 11.3333H8.66683C8.66683 11.7015 8.36835 12 8.00016 12C7.63197 12 7.3335 11.7015 7.3335 11.3333C6.22893 11.3333 5.3335 10.4379 5.3335 9.33333C5.3335 8.96514 5.63197 8.66667 6.00016 8.66667C6.36835 8.66667 6.66683 8.96514 6.66683 9.33333C6.66683 9.70152 6.96531 10 7.3335 10H8.83788C9.1116 10 9.3335 9.77811 9.3335 9.50439C9.3335 9.29106 9.19699 9.10167 8.99461 9.03421L6.58408 8.2307C5.83724 7.98176 5.3335 7.28284 5.3335 6.49561C5.3335 5.48551 6.15234 4.66667 7.16244 4.66667H7.3335Z" fill="#FCFCFD"/>
+                                </svg>
+                                Fetured
+                            </button>
+                            <button class="tab-button" onclick="openTab(event, 'tab6')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 13.3335C10.9457 13.3335 13.3335 10.9457 13.3335 8.00016C13.3335 5.05464 10.9457 2.66683 8.00016 2.66683C5.05464 2.66683 2.66683 5.05464 2.66683 8.00016C2.66683 10.9457 5.05464 13.3335 8.00016 13.3335ZM8.00016 14.6668C11.6821 14.6668 14.6668 11.6821 14.6668 8.00016C14.6668 4.31826 11.6821 1.3335 8.00016 1.3335C4.31826 1.3335 1.3335 4.31826 1.3335 8.00016C1.3335 11.6821 4.31826 14.6668 8.00016 14.6668Z" fill="#FCFCFD"/>
+                                    <path d="M7.3335 4.66667C7.3335 4.29848 7.63197 4 8.00016 4C8.36835 4 8.66683 4.29848 8.66683 4.66667C9.7714 4.66667 10.6668 5.5621 10.6668 6.66667C10.6668 7.03486 10.3684 7.33333 10.0002 7.33333C9.63197 7.33333 9.3335 7.03486 9.3335 6.66667C9.3335 6.29848 9.03502 6 8.66683 6H7.16244C6.88872 6 6.66683 6.22189 6.66683 6.49561C6.66683 6.70894 6.80334 6.89833 7.00571 6.96579L9.41625 7.7693C10.1631 8.01825 10.6668 8.71716 10.6668 9.50439C10.6668 10.5145 9.84798 11.3333 8.83788 11.3333H8.66683C8.66683 11.7015 8.36835 12 8.00016 12C7.63197 12 7.3335 11.7015 7.3335 11.3333C6.22893 11.3333 5.3335 10.4379 5.3335 9.33333C5.3335 8.96514 5.63197 8.66667 6.00016 8.66667C6.36835 8.66667 6.66683 8.96514 6.66683 9.33333C6.66683 9.70152 6.96531 10 7.3335 10H8.83788C9.1116 10 9.3335 9.77811 9.3335 9.50439C9.3335 9.29106 9.19699 9.10167 8.99461 9.03421L6.58408 8.2307C5.83724 7.98176 5.3335 7.28284 5.3335 6.49561C5.3335 5.48551 6.15234 4.66667 7.16244 4.66667H7.3335Z" fill="#FCFCFD"/>
+                                </svg>
+                                Family-friendly
+                            </button>
+                            <button class="tab-button" onclick="openTab(event, 'tab7')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 13.3335C10.9457 13.3335 13.3335 10.9457 13.3335 8.00016C13.3335 5.05464 10.9457 2.66683 8.00016 2.66683C5.05464 2.66683 2.66683 5.05464 2.66683 8.00016C2.66683 10.9457 5.05464 13.3335 8.00016 13.3335ZM8.00016 14.6668C11.6821 14.6668 14.6668 11.6821 14.6668 8.00016C14.6668 4.31826 11.6821 1.3335 8.00016 1.3335C4.31826 1.3335 1.3335 4.31826 1.3335 8.00016C1.3335 11.6821 4.31826 14.6668 8.00016 14.6668Z" fill="#FCFCFD"/>
+                                    <path d="M7.3335 4.66667C7.3335 4.29848 7.63197 4 8.00016 4C8.36835 4 8.66683 4.29848 8.66683 4.66667C9.7714 4.66667 10.6668 5.5621 10.6668 6.66667C10.6668 7.03486 10.3684 7.33333 10.0002 7.33333C9.63197 7.33333 9.3335 7.03486 9.3335 6.66667C9.3335 6.29848 9.03502 6 8.66683 6H7.16244C6.88872 6 6.66683 6.22189 6.66683 6.49561C6.66683 6.70894 6.80334 6.89833 7.00571 6.96579L9.41625 7.7693C10.1631 8.01825 10.6668 8.71716 10.6668 9.50439C10.6668 10.5145 9.84798 11.3333 8.83788 11.3333H8.66683C8.66683 11.7015 8.36835 12 8.00016 12C7.63197 12 7.3335 11.7015 7.3335 11.3333C6.22893 11.3333 5.3335 10.4379 5.3335 9.33333C5.3335 8.96514 5.63197 8.66667 6.00016 8.66667C6.36835 8.66667 6.66683 8.96514 6.66683 9.33333C6.66683 9.70152 6.96531 10 7.3335 10H8.83788C9.1116 10 9.3335 9.77811 9.3335 9.50439C9.3335 9.29106 9.19699 9.10167 8.99461 9.03421L6.58408 8.2307C5.83724 7.98176 5.3335 7.28284 5.3335 6.49561C5.3335 5.48551 6.15234 4.66667 7.16244 4.66667H7.3335Z" fill="#FCFCFD"/>
+                                </svg>
+                                On sale
+                            </button>
+                            <button class="tab-button" onclick="openTab(event, 'tab8')">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M8.00016 13.3335C10.9457 13.3335 13.3335 10.9457 13.3335 8.00016C13.3335 5.05464 10.9457 2.66683 8.00016 2.66683C5.05464 2.66683 2.66683 5.05464 2.66683 8.00016C2.66683 10.9457 5.05464 13.3335 8.00016 13.3335ZM8.00016 14.6668C11.6821 14.6668 14.6668 11.6821 14.6668 8.00016C14.6668 4.31826 11.6821 1.3335 8.00016 1.3335C4.31826 1.3335 1.3335 4.31826 1.3335 8.00016C1.3335 11.6821 4.31826 14.6668 8.00016 14.6668Z" fill="#FCFCFD"/>
+                                    <path d="M7.3335 4.66667C7.3335 4.29848 7.63197 4 8.00016 4C8.36835 4 8.66683 4.29848 8.66683 4.66667C9.7714 4.66667 10.6668 5.5621 10.6668 6.66667C10.6668 7.03486 10.3684 7.33333 10.0002 7.33333C9.63197 7.33333 9.3335 7.03486 9.3335 6.66667C9.3335 6.29848 9.03502 6 8.66683 6H7.16244C6.88872 6 6.66683 6.22189 6.66683 6.49561C6.66683 6.70894 6.80334 6.89833 7.00571 6.96579L9.41625 7.7693C10.1631 8.01825 10.6668 8.71716 10.6668 9.50439C10.6668 10.5145 9.84798 11.3333 8.83788 11.3333H8.66683C8.66683 11.7015 8.36835 12 8.00016 12C7.63197 12 7.3335 11.7015 7.3335 11.3333C6.22893 11.3333 5.3335 10.4379 5.3335 9.33333C5.3335 8.96514 5.63197 8.66667 6.00016 8.66667C6.36835 8.66667 6.66683 8.96514 6.66683 9.33333C6.66683 9.70152 6.96531 10 7.3335 10H8.83788C9.1116 10 9.3335 9.77811 9.3335 9.50439C9.3335 9.29106 9.19699 9.10167 8.99461 9.03421L6.58408 8.2307C5.83724 7.98176 5.3335 7.28284 5.3335 6.49561C5.3335 5.48551 6.15234 4.66667 7.16244 4.66667H7.3335Z" fill="#FCFCFD"/>
+                                </svg>
+                                Sub nav
+                            </button>
+                        </div>
+                        <div class="feature-added-dropdown">
+                            <span>Recently added</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 9.79289C15.8166 9.40237 15.1834 9.40237 14.7929 9.79289L12 12.5858L9.20711 9.79289C8.81658 9.40237 8.18342 9.40237 7.79289 9.79289C7.40237 10.1834 7.40237 10.8166 7.79289 11.2071L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L16.2071 11.2071C16.5976 10.8166 16.5976 10.1834 16.2071 9.79289Z" fill="#777E91"/>
+                            </svg>
+                        </div>
+                        <div class="recent-added-dropdown">
+                            <span>Recently added</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 9.79289C15.8166 9.40237 15.1834 9.40237 14.7929 9.79289L12 12.5858L9.20711 9.79289C8.81658 9.40237 8.18342 9.40237 7.79289 9.79289C7.40237 10.1834 7.40237 10.8166 7.79289 11.2071L11.2929 14.7071C11.6834 15.0976 12.3166 15.0976 12.7071 14.7071L16.2071 11.2071C16.5976 10.8166 16.5976 10.1834 16.2071 9.79289Z" fill="#777E91"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div id="tab5" class="tab-content" style="display: flex;">
+                        <div class="tab-wrapper">
+                            <div class="card-img">
+                                <img alt="" src="./assets/images/card-img1.png" width="256" height="228">
+                                <div class="card-detail-wrapper">
+                                    <div class="card-details">
+                                        <div class="card-title">
+                                            <h6>The grand resort</h6>
+                                            <span>Karineside</span>
+                                        </div>
+                                        <div class="card-rates">
+                                            <del>$699</del>
+                                            <span>$548</span>
+                                        </div>
+                                    </div>
+                                    <hr class="card-separate-line">
+                                    <div class="card-date-wrapper">
+                                        <div class="date-left">
+                                            <div class="date-start">
+                                                <span>Tue, Jul 20</span>
+                                            </div>
+                                            <div class="dash">-</div>
+                                            <div class="date-end">
+                                                <span>Fri, Jul 23</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z" fill="#FFD166"/>
+                                            </svg>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-wrapper">
+                            <div class="card-img">
+                                <img alt="" src="./assets/images/card-img2.png" width="256" height="228">
+                                <div class="card-detail-wrapper">
+                                    <div class="card-details">
+                                        <div class="card-title">
+                                            <h6>The grand resort</h6>
+                                            <span>Karineside</span>
+                                        </div>
+                                        <div class="card-rates">
+                                            <del>$699</del>
+                                            <span>$548</span>
+                                        </div>
+                                    </div>
+                                    <hr class="card-separate-line">
+                                    <div class="card-date-wrapper">
+                                        <div class="date-left">
+                                            <div class="date-start">
+                                                <span>Tue, Jul 20</span>
+                                            </div>
+                                            <div class="dash">-</div>
+                                            <div class="date-end">
+                                                <span>Fri, Jul 23</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z" fill="#FFD166"/>
+                                            </svg>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-wrapper">
+                            <div class="card-img">
+                                <img alt="" src="./assets/images/card-img3.png" width="256" height="228">
+                                <div class="card-detail-wrapper">
+                                    <div class="card-details">
+                                        <div class="card-title">
+                                            <h6>The grand resort</h6>
+                                            <span>Karineside</span>
+                                        </div>
+                                        <div class="card-rates">
+                                            <del>$699</del>
+                                            <span>$548</span>
+                                        </div>
+                                    </div>
+                                    <hr class="card-separate-line">
+                                    <div class="card-date-wrapper">
+                                        <div class="date-left">
+                                            <div class="date-start">
+                                                <span>Tue, Jul 20</span>
+                                            </div>
+                                            <div class="dash">-</div>
+                                            <div class="date-end">
+                                                <span>Fri, Jul 23</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z" fill="#FFD166"/>
+                                            </svg>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-wrapper">
+                            <div class="card-img">
+                                <img alt="" src="./assets/images/card-img4.png" width="256" height="228">
+                                <div class="card-detail-wrapper">
+                                    <div class="card-details">
+                                        <div class="card-title">
+                                            <h6>The grand resort</h6>
+                                            <span>Karineside</span>
+                                        </div>
+                                        <div class="card-rates">
+                                            <del>$699</del>
+                                            <span>$548</span>
+                                        </div>
+                                    </div>
+                                    <hr class="card-separate-line">
+                                    <div class="card-date-wrapper">
+                                        <div class="date-left">
+                                            <div class="date-start">
+                                                <span>Tue, Jul 20</span>
+                                            </div>
+                                            <div class="dash">-</div>
+                                            <div class="date-end">
+                                                <span>Fri, Jul 23</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z" fill="#FFD166"/>
+                                            </svg>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-wrapper">
+                            <div class="card-img">
+                                <img alt="" src="./assets/images/card-img1.png" width="256" height="228">
+                                <div class="card-detail-wrapper">
+                                    <div class="card-details">
+                                        <div class="card-title">
+                                            <h6>The grand resort</h6>
+                                            <span>Karineside</span>
+                                        </div>
+                                        <div class="card-rates">
+                                            <del>$699</del>
+                                            <span>$548</span>
+                                        </div>
+                                    </div>
+                                    <hr class="card-separate-line">
+                                    <div class="card-date-wrapper">
+                                        <div class="date-left">
+                                            <div class="date-start">
+                                                <span>Tue, Jul 20</span>
+                                            </div>
+                                            <div class="dash">-</div>
+                                            <div class="date-end">
+                                                <span>Fri, Jul 23</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z" fill="#FFD166"/>
+                                            </svg>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-wrapper">
+                            <div class="card-img">
+                                <img alt="" src="./assets/images/card-img2.png" width="256" height="228">
+                                <div class="card-detail-wrapper">
+                                    <div class="card-details">
+                                        <div class="card-title">
+                                            <h6>The grand resort</h6>
+                                            <span>Karineside</span>
+                                        </div>
+                                        <div class="card-rates">
+                                            <del>$699</del>
+                                            <span>$548</span>
+                                        </div>
+                                    </div>
+                                    <hr class="card-separate-line">
+                                    <div class="card-date-wrapper">
+                                        <div class="date-left">
+                                            <div class="date-start">
+                                                <span>Tue, Jul 20</span>
+                                            </div>
+                                            <div class="dash">-</div>
+                                            <div class="date-end">
+                                                <span>Fri, Jul 23</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z" fill="#FFD166"/>
+                                            </svg>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-wrapper">
+                            <div class="card-img">
+                                <img alt="" src="./assets/images/card-img3.png" width="256" height="228">
+                                <div class="card-detail-wrapper">
+                                    <div class="card-details">
+                                        <div class="card-title">
+                                            <h6>The grand resort</h6>
+                                            <span>Karineside</span>
+                                        </div>
+                                        <div class="card-rates">
+                                            <del>$699</del>
+                                            <span>$548</span>
+                                        </div>
+                                    </div>
+                                    <hr class="card-separate-line">
+                                    <div class="card-date-wrapper">
+                                        <div class="date-left">
+                                            <div class="date-start">
+                                                <span>Tue, Jul 20</span>
+                                            </div>
+                                            <div class="dash">-</div>
+                                            <div class="date-end">
+                                                <span>Fri, Jul 23</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z" fill="#FFD166"/>
+                                            </svg>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-wrapper">
+                            <div class="card-img">
+                                <img alt="" src="./assets/images/card-img4.png" width="256" height="228">
+                                <div class="card-detail-wrapper">
+                                    <div class="card-details">
+                                        <div class="card-title">
+                                            <h6>The grand resort</h6>
+                                            <span>Karineside</span>
+                                        </div>
+                                        <div class="card-rates">
+                                            <del>$699</del>
+                                            <span>$548</span>
+                                        </div>
+                                    </div>
+                                    <hr class="card-separate-line">
+                                    <div class="card-date-wrapper">
+                                        <div class="date-left">
+                                            <div class="date-start">
+                                                <span>Tue, Jul 20</span>
+                                            </div>
+                                            <div class="dash">-</div>
+                                            <div class="date-end">
+                                                <span>Fri, Jul 23</span>
+                                            </div>
+                                        </div>
+                                        <div class="rating-wrapper">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M7.26769 0.771504L8.34956 2.90038L10.7783 3.24313C11.9161 3.40365 12.4362 4.80771 11.5591 5.63743L9.81456 7.28626L10.2251 9.60958C10.4354 10.7998 9.17219 11.5991 8.17749 11.0923L5.99989 9.98149L3.82294 11.0919C2.82677 11.6004 1.56462 10.7984 1.77462 9.60963L2.18521 7.28626L0.440938 5.63766C-0.436791 4.80734 0.0851323 3.40358 1.22135 3.24315L3.6503 2.90036L4.73271 0.771504C5.25549 -0.257123 6.745 -0.257213 7.26769 0.771504Z" fill="#FFD166"/>
+                                            </svg>
+                                            <span>4.9</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="view-all-btn">
+                        <button type="button">view all</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Browse by category HTML -->
+    <div class="category-wrapper">
+        <div class="category-heading">
+            <h3>Browse by category</h3>
+            <h6>Let’s go on an adventure</h6>
+        </div>
+        <div class="category-slider-wrapper">
+            <div class="card-slider">
+                <div class="digits">
+                    <span>256.356</span>
+                </div>
+                <div class="card-slider-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 16.0002H18.6667V26.6668H25.3333C26.0697 26.6668 26.6667 26.0699 26.6667 25.3335V17.3335C26.6667 16.5971 26.0697 16.0002 25.3333 16.0002ZM16 13.3335V29.3335H25.3333C27.5425 29.3335 29.3333 27.5426 29.3333 25.3335V17.3335C29.3333 15.1244 27.5425 13.3335 25.3333 13.3335H16Z" fill="#23262F"/>
+                        <path d="M24.0002 19.9998C24.0002 19.2635 23.4032 18.6665 22.6668 18.6665C21.9305 18.6665 21.3335 19.2635 21.3335 19.9998C21.3335 20.7362 21.9305 21.3332 22.6668 21.3332C23.4032 21.3332 24.0002 20.7362 24.0002 19.9998Z" fill="#23262F"/>
+                        <path d="M24.0002 23.9998C24.0002 23.2635 23.4032 22.6665 22.6668 22.6665C21.9305 22.6665 21.3335 23.2635 21.3335 23.9998C21.3335 24.7362 21.9305 25.3332 22.6668 25.3332C23.4032 25.3332 24.0002 24.7362 24.0002 23.9998Z" fill="#23262F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6665 29.3332C4.45736 29.3332 2.6665 27.5423 2.6665 25.3332V6.6665C2.6665 4.45736 4.45736 2.6665 6.6665 2.6665H14.6665C16.8756 2.6665 18.6665 4.45737 18.6665 6.6665V29.3332H6.6665ZM6.6665 5.33317H14.6665C15.4029 5.33317 15.9998 5.93012 15.9998 6.6665V26.6665H13.3332V25.3332C13.3332 24.5968 12.7362 23.9998 11.9998 23.9998H9.33317C8.59679 23.9998 7.99984 24.5968 7.99984 25.3332V26.6665H6.6665C5.93012 26.6665 5.33317 26.0695 5.33317 25.3332V6.6665C5.33317 5.93012 5.93012 5.33317 6.6665 5.33317Z" fill="#23262F"/>
+                        <path d="M12 8C12.7364 8 13.3333 8.59695 13.3333 9.33333C13.3333 10.0697 12.7364 10.6667 12 10.6667H9.33333C8.59695 10.6667 8 10.0697 8 9.33333C8 8.59695 8.59695 8 9.33333 8H12Z" fill="#23262F"/>
+                        <path d="M12 13.3333C12.7364 13.3333 13.3333 13.9303 13.3333 14.6667C13.3333 15.403 12.7364 16 12 16H9.33333C8.59695 16 8 15.403 8 14.6667C8 13.9303 8.59695 13.3333 9.33333 13.3333H12Z" fill="#23262F"/>
+                        <path d="M13.3333 20C13.3333 19.2636 12.7364 18.6667 12 18.6667H9.33333C8.59695 18.6667 8 19.2636 8 20C8 20.7364 8.59695 21.3333 9.33333 21.3333H12C12.7364 21.3333 13.3333 20.7364 13.3333 20Z" fill="#23262F"/>
+                      </svg>
+                      <h5>City house</h5>
+                      <span>Small description</span>
+                </div>
+            </div>
+            <div class="card-slider">
+                <div class="digits">
+                    <span>256.356</span>
+                </div>
+                <div class="card-slider-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 16.0002H18.6667V26.6668H25.3333C26.0697 26.6668 26.6667 26.0699 26.6667 25.3335V17.3335C26.6667 16.5971 26.0697 16.0002 25.3333 16.0002ZM16 13.3335V29.3335H25.3333C27.5425 29.3335 29.3333 27.5426 29.3333 25.3335V17.3335C29.3333 15.1244 27.5425 13.3335 25.3333 13.3335H16Z" fill="#23262F"/>
+                        <path d="M24.0002 19.9998C24.0002 19.2635 23.4032 18.6665 22.6668 18.6665C21.9305 18.6665 21.3335 19.2635 21.3335 19.9998C21.3335 20.7362 21.9305 21.3332 22.6668 21.3332C23.4032 21.3332 24.0002 20.7362 24.0002 19.9998Z" fill="#23262F"/>
+                        <path d="M24.0002 23.9998C24.0002 23.2635 23.4032 22.6665 22.6668 22.6665C21.9305 22.6665 21.3335 23.2635 21.3335 23.9998C21.3335 24.7362 21.9305 25.3332 22.6668 25.3332C23.4032 25.3332 24.0002 24.7362 24.0002 23.9998Z" fill="#23262F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6665 29.3332C4.45736 29.3332 2.6665 27.5423 2.6665 25.3332V6.6665C2.6665 4.45736 4.45736 2.6665 6.6665 2.6665H14.6665C16.8756 2.6665 18.6665 4.45737 18.6665 6.6665V29.3332H6.6665ZM6.6665 5.33317H14.6665C15.4029 5.33317 15.9998 5.93012 15.9998 6.6665V26.6665H13.3332V25.3332C13.3332 24.5968 12.7362 23.9998 11.9998 23.9998H9.33317C8.59679 23.9998 7.99984 24.5968 7.99984 25.3332V26.6665H6.6665C5.93012 26.6665 5.33317 26.0695 5.33317 25.3332V6.6665C5.33317 5.93012 5.93012 5.33317 6.6665 5.33317Z" fill="#23262F"/>
+                        <path d="M12 8C12.7364 8 13.3333 8.59695 13.3333 9.33333C13.3333 10.0697 12.7364 10.6667 12 10.6667H9.33333C8.59695 10.6667 8 10.0697 8 9.33333C8 8.59695 8.59695 8 9.33333 8H12Z" fill="#23262F"/>
+                        <path d="M12 13.3333C12.7364 13.3333 13.3333 13.9303 13.3333 14.6667C13.3333 15.403 12.7364 16 12 16H9.33333C8.59695 16 8 15.403 8 14.6667C8 13.9303 8.59695 13.3333 9.33333 13.3333H12Z" fill="#23262F"/>
+                        <path d="M13.3333 20C13.3333 19.2636 12.7364 18.6667 12 18.6667H9.33333C8.59695 18.6667 8 19.2636 8 20C8 20.7364 8.59695 21.3333 9.33333 21.3333H12C12.7364 21.3333 13.3333 20.7364 13.3333 20Z" fill="#23262F"/>
+                      </svg>
+                      <h5>City house</h5>
+                      <span>Small description</span>
+                </div>
+            </div>
+            <div class="card-slider">
+                <div class="digits">
+                    <span>256.356</span>
+                </div>
+                <div class="card-slider-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 16.0002H18.6667V26.6668H25.3333C26.0697 26.6668 26.6667 26.0699 26.6667 25.3335V17.3335C26.6667 16.5971 26.0697 16.0002 25.3333 16.0002ZM16 13.3335V29.3335H25.3333C27.5425 29.3335 29.3333 27.5426 29.3333 25.3335V17.3335C29.3333 15.1244 27.5425 13.3335 25.3333 13.3335H16Z" fill="#23262F"/>
+                        <path d="M24.0002 19.9998C24.0002 19.2635 23.4032 18.6665 22.6668 18.6665C21.9305 18.6665 21.3335 19.2635 21.3335 19.9998C21.3335 20.7362 21.9305 21.3332 22.6668 21.3332C23.4032 21.3332 24.0002 20.7362 24.0002 19.9998Z" fill="#23262F"/>
+                        <path d="M24.0002 23.9998C24.0002 23.2635 23.4032 22.6665 22.6668 22.6665C21.9305 22.6665 21.3335 23.2635 21.3335 23.9998C21.3335 24.7362 21.9305 25.3332 22.6668 25.3332C23.4032 25.3332 24.0002 24.7362 24.0002 23.9998Z" fill="#23262F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6665 29.3332C4.45736 29.3332 2.6665 27.5423 2.6665 25.3332V6.6665C2.6665 4.45736 4.45736 2.6665 6.6665 2.6665H14.6665C16.8756 2.6665 18.6665 4.45737 18.6665 6.6665V29.3332H6.6665ZM6.6665 5.33317H14.6665C15.4029 5.33317 15.9998 5.93012 15.9998 6.6665V26.6665H13.3332V25.3332C13.3332 24.5968 12.7362 23.9998 11.9998 23.9998H9.33317C8.59679 23.9998 7.99984 24.5968 7.99984 25.3332V26.6665H6.6665C5.93012 26.6665 5.33317 26.0695 5.33317 25.3332V6.6665C5.33317 5.93012 5.93012 5.33317 6.6665 5.33317Z" fill="#23262F"/>
+                        <path d="M12 8C12.7364 8 13.3333 8.59695 13.3333 9.33333C13.3333 10.0697 12.7364 10.6667 12 10.6667H9.33333C8.59695 10.6667 8 10.0697 8 9.33333C8 8.59695 8.59695 8 9.33333 8H12Z" fill="#23262F"/>
+                        <path d="M12 13.3333C12.7364 13.3333 13.3333 13.9303 13.3333 14.6667C13.3333 15.403 12.7364 16 12 16H9.33333C8.59695 16 8 15.403 8 14.6667C8 13.9303 8.59695 13.3333 9.33333 13.3333H12Z" fill="#23262F"/>
+                        <path d="M13.3333 20C13.3333 19.2636 12.7364 18.6667 12 18.6667H9.33333C8.59695 18.6667 8 19.2636 8 20C8 20.7364 8.59695 21.3333 9.33333 21.3333H12C12.7364 21.3333 13.3333 20.7364 13.3333 20Z" fill="#23262F"/>
+                      </svg>
+                      <h5>City house</h5>
+                      <span>Small description</span>
+                </div>
+            </div>
+            <div class="card-slider">
+                <div class="digits">
+                    <span>256.356</span>
+                </div>
+                <div class="card-slider-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 16.0002H18.6667V26.6668H25.3333C26.0697 26.6668 26.6667 26.0699 26.6667 25.3335V17.3335C26.6667 16.5971 26.0697 16.0002 25.3333 16.0002ZM16 13.3335V29.3335H25.3333C27.5425 29.3335 29.3333 27.5426 29.3333 25.3335V17.3335C29.3333 15.1244 27.5425 13.3335 25.3333 13.3335H16Z" fill="#23262F"/>
+                        <path d="M24.0002 19.9998C24.0002 19.2635 23.4032 18.6665 22.6668 18.6665C21.9305 18.6665 21.3335 19.2635 21.3335 19.9998C21.3335 20.7362 21.9305 21.3332 22.6668 21.3332C23.4032 21.3332 24.0002 20.7362 24.0002 19.9998Z" fill="#23262F"/>
+                        <path d="M24.0002 23.9998C24.0002 23.2635 23.4032 22.6665 22.6668 22.6665C21.9305 22.6665 21.3335 23.2635 21.3335 23.9998C21.3335 24.7362 21.9305 25.3332 22.6668 25.3332C23.4032 25.3332 24.0002 24.7362 24.0002 23.9998Z" fill="#23262F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6665 29.3332C4.45736 29.3332 2.6665 27.5423 2.6665 25.3332V6.6665C2.6665 4.45736 4.45736 2.6665 6.6665 2.6665H14.6665C16.8756 2.6665 18.6665 4.45737 18.6665 6.6665V29.3332H6.6665ZM6.6665 5.33317H14.6665C15.4029 5.33317 15.9998 5.93012 15.9998 6.6665V26.6665H13.3332V25.3332C13.3332 24.5968 12.7362 23.9998 11.9998 23.9998H9.33317C8.59679 23.9998 7.99984 24.5968 7.99984 25.3332V26.6665H6.6665C5.93012 26.6665 5.33317 26.0695 5.33317 25.3332V6.6665C5.33317 5.93012 5.93012 5.33317 6.6665 5.33317Z" fill="#23262F"/>
+                        <path d="M12 8C12.7364 8 13.3333 8.59695 13.3333 9.33333C13.3333 10.0697 12.7364 10.6667 12 10.6667H9.33333C8.59695 10.6667 8 10.0697 8 9.33333C8 8.59695 8.59695 8 9.33333 8H12Z" fill="#23262F"/>
+                        <path d="M12 13.3333C12.7364 13.3333 13.3333 13.9303 13.3333 14.6667C13.3333 15.403 12.7364 16 12 16H9.33333C8.59695 16 8 15.403 8 14.6667C8 13.9303 8.59695 13.3333 9.33333 13.3333H12Z" fill="#23262F"/>
+                        <path d="M13.3333 20C13.3333 19.2636 12.7364 18.6667 12 18.6667H9.33333C8.59695 18.6667 8 19.2636 8 20C8 20.7364 8.59695 21.3333 9.33333 21.3333H12C12.7364 21.3333 13.3333 20.7364 13.3333 20Z" fill="#23262F"/>
+                      </svg>
+                      <h5>City house</h5>
+                      <span>Small description</span>
+                </div>
+            </div>
+            <div class="card-slider">
+                <div class="digits">
+                    <span>256.356</span>
+                </div>
+                <div class="card-slider-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 16.0002H18.6667V26.6668H25.3333C26.0697 26.6668 26.6667 26.0699 26.6667 25.3335V17.3335C26.6667 16.5971 26.0697 16.0002 25.3333 16.0002ZM16 13.3335V29.3335H25.3333C27.5425 29.3335 29.3333 27.5426 29.3333 25.3335V17.3335C29.3333 15.1244 27.5425 13.3335 25.3333 13.3335H16Z" fill="#23262F"/>
+                        <path d="M24.0002 19.9998C24.0002 19.2635 23.4032 18.6665 22.6668 18.6665C21.9305 18.6665 21.3335 19.2635 21.3335 19.9998C21.3335 20.7362 21.9305 21.3332 22.6668 21.3332C23.4032 21.3332 24.0002 20.7362 24.0002 19.9998Z" fill="#23262F"/>
+                        <path d="M24.0002 23.9998C24.0002 23.2635 23.4032 22.6665 22.6668 22.6665C21.9305 22.6665 21.3335 23.2635 21.3335 23.9998C21.3335 24.7362 21.9305 25.3332 22.6668 25.3332C23.4032 25.3332 24.0002 24.7362 24.0002 23.9998Z" fill="#23262F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6665 29.3332C4.45736 29.3332 2.6665 27.5423 2.6665 25.3332V6.6665C2.6665 4.45736 4.45736 2.6665 6.6665 2.6665H14.6665C16.8756 2.6665 18.6665 4.45737 18.6665 6.6665V29.3332H6.6665ZM6.6665 5.33317H14.6665C15.4029 5.33317 15.9998 5.93012 15.9998 6.6665V26.6665H13.3332V25.3332C13.3332 24.5968 12.7362 23.9998 11.9998 23.9998H9.33317C8.59679 23.9998 7.99984 24.5968 7.99984 25.3332V26.6665H6.6665C5.93012 26.6665 5.33317 26.0695 5.33317 25.3332V6.6665C5.33317 5.93012 5.93012 5.33317 6.6665 5.33317Z" fill="#23262F"/>
+                        <path d="M12 8C12.7364 8 13.3333 8.59695 13.3333 9.33333C13.3333 10.0697 12.7364 10.6667 12 10.6667H9.33333C8.59695 10.6667 8 10.0697 8 9.33333C8 8.59695 8.59695 8 9.33333 8H12Z" fill="#23262F"/>
+                        <path d="M12 13.3333C12.7364 13.3333 13.3333 13.9303 13.3333 14.6667C13.3333 15.403 12.7364 16 12 16H9.33333C8.59695 16 8 15.403 8 14.6667C8 13.9303 8.59695 13.3333 9.33333 13.3333H12Z" fill="#23262F"/>
+                        <path d="M13.3333 20C13.3333 19.2636 12.7364 18.6667 12 18.6667H9.33333C8.59695 18.6667 8 19.2636 8 20C8 20.7364 8.59695 21.3333 9.33333 21.3333H12C12.7364 21.3333 13.3333 20.7364 13.3333 20Z" fill="#23262F"/>
+                      </svg>
+                      <h5>City house</h5>
+                      <span>Small description</span>
+                </div>
+            </div>
+            <div class="card-slider">
+                <div class="digits">
+                    <span>256.356</span>
+                </div>
+                <div class="card-slider-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 16.0002H18.6667V26.6668H25.3333C26.0697 26.6668 26.6667 26.0699 26.6667 25.3335V17.3335C26.6667 16.5971 26.0697 16.0002 25.3333 16.0002ZM16 13.3335V29.3335H25.3333C27.5425 29.3335 29.3333 27.5426 29.3333 25.3335V17.3335C29.3333 15.1244 27.5425 13.3335 25.3333 13.3335H16Z" fill="#23262F"/>
+                        <path d="M24.0002 19.9998C24.0002 19.2635 23.4032 18.6665 22.6668 18.6665C21.9305 18.6665 21.3335 19.2635 21.3335 19.9998C21.3335 20.7362 21.9305 21.3332 22.6668 21.3332C23.4032 21.3332 24.0002 20.7362 24.0002 19.9998Z" fill="#23262F"/>
+                        <path d="M24.0002 23.9998C24.0002 23.2635 23.4032 22.6665 22.6668 22.6665C21.9305 22.6665 21.3335 23.2635 21.3335 23.9998C21.3335 24.7362 21.9305 25.3332 22.6668 25.3332C23.4032 25.3332 24.0002 24.7362 24.0002 23.9998Z" fill="#23262F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6665 29.3332C4.45736 29.3332 2.6665 27.5423 2.6665 25.3332V6.6665C2.6665 4.45736 4.45736 2.6665 6.6665 2.6665H14.6665C16.8756 2.6665 18.6665 4.45737 18.6665 6.6665V29.3332H6.6665ZM6.6665 5.33317H14.6665C15.4029 5.33317 15.9998 5.93012 15.9998 6.6665V26.6665H13.3332V25.3332C13.3332 24.5968 12.7362 23.9998 11.9998 23.9998H9.33317C8.59679 23.9998 7.99984 24.5968 7.99984 25.3332V26.6665H6.6665C5.93012 26.6665 5.33317 26.0695 5.33317 25.3332V6.6665C5.33317 5.93012 5.93012 5.33317 6.6665 5.33317Z" fill="#23262F"/>
+                        <path d="M12 8C12.7364 8 13.3333 8.59695 13.3333 9.33333C13.3333 10.0697 12.7364 10.6667 12 10.6667H9.33333C8.59695 10.6667 8 10.0697 8 9.33333C8 8.59695 8.59695 8 9.33333 8H12Z" fill="#23262F"/>
+                        <path d="M12 13.3333C12.7364 13.3333 13.3333 13.9303 13.3333 14.6667C13.3333 15.403 12.7364 16 12 16H9.33333C8.59695 16 8 15.403 8 14.6667C8 13.9303 8.59695 13.3333 9.33333 13.3333H12Z" fill="#23262F"/>
+                        <path d="M13.3333 20C13.3333 19.2636 12.7364 18.6667 12 18.6667H9.33333C8.59695 18.6667 8 19.2636 8 20C8 20.7364 8.59695 21.3333 9.33333 21.3333H12C12.7364 21.3333 13.3333 20.7364 13.3333 20Z" fill="#23262F"/>
+                      </svg>
+                      <h5>City house</h5>
+                      <span>Small description</span>
+                </div>
+            </div>
+            <div class="card-slider">
+                <div class="digits">
+                    <span>256.356</span>
+                </div>
+                <div class="card-slider-details">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M25.3333 16.0002H18.6667V26.6668H25.3333C26.0697 26.6668 26.6667 26.0699 26.6667 25.3335V17.3335C26.6667 16.5971 26.0697 16.0002 25.3333 16.0002ZM16 13.3335V29.3335H25.3333C27.5425 29.3335 29.3333 27.5426 29.3333 25.3335V17.3335C29.3333 15.1244 27.5425 13.3335 25.3333 13.3335H16Z" fill="#23262F"/>
+                        <path d="M24.0002 19.9998C24.0002 19.2635 23.4032 18.6665 22.6668 18.6665C21.9305 18.6665 21.3335 19.2635 21.3335 19.9998C21.3335 20.7362 21.9305 21.3332 22.6668 21.3332C23.4032 21.3332 24.0002 20.7362 24.0002 19.9998Z" fill="#23262F"/>
+                        <path d="M24.0002 23.9998C24.0002 23.2635 23.4032 22.6665 22.6668 22.6665C21.9305 22.6665 21.3335 23.2635 21.3335 23.9998C21.3335 24.7362 21.9305 25.3332 22.6668 25.3332C23.4032 25.3332 24.0002 24.7362 24.0002 23.9998Z" fill="#23262F"/>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.6665 29.3332C4.45736 29.3332 2.6665 27.5423 2.6665 25.3332V6.6665C2.6665 4.45736 4.45736 2.6665 6.6665 2.6665H14.6665C16.8756 2.6665 18.6665 4.45737 18.6665 6.6665V29.3332H6.6665ZM6.6665 5.33317H14.6665C15.4029 5.33317 15.9998 5.93012 15.9998 6.6665V26.6665H13.3332V25.3332C13.3332 24.5968 12.7362 23.9998 11.9998 23.9998H9.33317C8.59679 23.9998 7.99984 24.5968 7.99984 25.3332V26.6665H6.6665C5.93012 26.6665 5.33317 26.0695 5.33317 25.3332V6.6665C5.33317 5.93012 5.93012 5.33317 6.6665 5.33317Z" fill="#23262F"/>
+                        <path d="M12 8C12.7364 8 13.3333 8.59695 13.3333 9.33333C13.3333 10.0697 12.7364 10.6667 12 10.6667H9.33333C8.59695 10.6667 8 10.0697 8 9.33333C8 8.59695 8.59695 8 9.33333 8H12Z" fill="#23262F"/>
+                        <path d="M12 13.3333C12.7364 13.3333 13.3333 13.9303 13.3333 14.6667C13.3333 15.403 12.7364 16 12 16H9.33333C8.59695 16 8 15.403 8 14.6667C8 13.9303 8.59695 13.3333 9.33333 13.3333H12Z" fill="#23262F"/>
+                        <path d="M13.3333 20C13.3333 19.2636 12.7364 18.6667 12 18.6667H9.33333C8.59695 18.6667 8 19.2636 8 20C8 20.7364 8.59695 21.3333 9.33333 21.3333H12C12.7364 21.3333 13.3333 20.7364 13.3333 20Z" fill="#23262F"/>
+                      </svg>
+                      <h5>City house</h5>
+                      <span>Small description</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+  </body>
+</html>
+
+
+
+<script>
+
+    $( document ).ready(function(){
+        document.getElementById("tab1").style.display = "flex";
+        document.getElementById("tab5").style.display = "flex";
+        document.getElementsByClassName("tab-button")[0].classList.add("active");
+
+        function openTab(evt, tabName) {
+            var i, tabContent, tabButtons;
+            
+            tabContent = document.getElementsByClassName("tab-content");
+            for (i = 0; i < tabContent.length; i++) {
+                tabContent[i].style.display = "none";
+            }
+            
+            tabButtons = document.getElementsByClassName("tab-button");
+            for (i = 0; i < tabButtons.length; i++) {
+                tabButtons[i].className = tabButtons[i].className.replace(" active", "");
+            }
+            
+            document.getElementById(tabName).style.display = "flex";
+            evt.currentTarget.className += " active";
+        }
+    });
+
+
+    $( document ).ready(function() {
+        $('.category-slider-wrapper').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 4,
+            adaptiveHeight: true,
+
+            prevArrow: '<button type="button" class="slick-prev custom-prev"><img alt="" src="./assets/images/prev-arrow.svg"></button>',
+            nextArrow: '<button type="button" class="slick-next custom-next"><img alt="" src="./assets/images/next-arrow.svg"></button>',
+
+            dots: false,
+
+            responsive: [
+                {
+                breakpoint: 767,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    infinite: true,
+                    dots: false,
+                    variableWidth: true
+                }
+                },
+            ]
+        });
+    });
+</script>
